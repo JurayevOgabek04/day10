@@ -3,20 +3,17 @@
 var numbers = [1,3,5,9]
 
 function numbersSum(numbers){
-    
-    let i = 0;
     let summa = 0;
-    for (let k = numbers[i]; i < numbers.length; i++ ){
-        summa += numbers[i]
+    for (let i in numbers){
+        summa += +numbers[i];
     }
 
     return summa
 }
 
-let result = numbersSum(numbers);
+let result = numbersSum(numbers)
 
 console.log(result);
-
 
 
 //  // 2-vazifa
@@ -26,11 +23,10 @@ console.log(result);
 // var numbers = [1,-5,16,0,2]
 
 // function numbersSum(numbers){
-//     let i = 0;
 //     let summa = 0;
-//     for (let k = numbers[i]; i < numbers.length; i++ ){
+//     for (let i in numbers){
 //         if (numbers[i] > 0){
-//             summa += numbers[i]
+//             summa += +numbers[i]
 //         }
 //     }
 
@@ -52,18 +48,16 @@ console.log(result);
 // var numbers1 = []
 // var numbers2 = []
 // function normalizeNumbers(numbers){
-//     let i = 0;
-//     for (let k = numbers[i]; i < numbers.length; i++){
-//         numbers1.push(Math.round(numbers[i]))
+//     for (let i in numbers){
 
-//         if (numbers1[i] < 0){
-//             numbers2.push(-numbers1[i])
+//         if (numbers[i] < 0){
+//             numbers1.push(Math.round(-numbers[i]))
 //         } else {
-//             numbers2.push(numbers1[i])
+//             numbers1.push(Math.round(numbers[i]))
 //         }
 //     }
 
-//     return numbers2
+//     return numbers1
 // }
 
 // let result = normalizeNumbers(numbers)
